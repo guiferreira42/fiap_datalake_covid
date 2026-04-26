@@ -12,7 +12,7 @@ Este projeto utiliza a arquitetura **Medallion (Bronze → Silver → Gold)**:
 - **Silver**: limpeza, padronização e tipagem
 - **Gold**: enriquecimento e modelagem analítica
 
-![Arquitetura](docs/arquitetura.png)
+![Arquitetura](docs/arquitetura.jpg)
 
 ---
 
