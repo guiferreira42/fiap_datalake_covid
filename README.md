@@ -12,6 +12,8 @@ Este projeto utiliza a arquitetura **Medallion (Bronze → Silver → Gold)**:
 - **Silver**: limpeza, padronização e tipagem
 - **Gold**: enriquecimento e modelagem analítica
 
+![Arquitetura](docs/arquitetura.png)
+
 ---
 
 ## ☁️ Stack Tecnológica
@@ -25,12 +27,22 @@ Este projeto utiliza a arquitetura **Medallion (Bronze → Silver → Gold)**:
 ---
 
 ## 📁 Estrutura do Projeto
-notebooks/
-├── etl-bronze-ingestao.ipynb
-├── AWS-Glue/
-├── etl-silver-covid.ipynb
-├── etl-silver-dicionario.ipynb
-├── etl-gold-covid.ipynb
+fiap_datalake_covid/
+│
+├── notebooks/
+│ ├── etl-bronze-ingestao.ipynb # Ingestão local (ZIP → Parquet → S3)
+│
+│ └── aws-glue/ # Scripts executados no AWS Glue (Spark)
+│ ├── etl-silver-covid.ipynb # Transformação da base principal
+│ ├── etl-silver-dicionario.ipynb # Tratamento do dicionário
+│ ├── etl-gold-covid.ipynb # Camada analítica (joins e enriquecimento)
+│
+├── docs/
+│ ├── arquitetura.png
+│ ├── dashboard.png
+│
+├── requirements.txt
+├── README.md
 ---
 
 ## 🔄 Pipeline de Dados
@@ -99,4 +111,5 @@ Os dados foram consumidos via **Amazon Athena** e conectados ao **Power BI**, pe
 ## 📌 Autor
 
 Guilherme Ferreira
+
 Projeto desenvolvido para o Tech Challenge FIAP
