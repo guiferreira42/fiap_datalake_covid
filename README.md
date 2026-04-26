@@ -44,6 +44,7 @@ fiap_datalake_covid/
 │
 ├── requirements.txt
 ├── README.md
+```
 ---
 
 ## 🔄 Pipeline de Dados
