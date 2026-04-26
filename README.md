@@ -27,6 +27,7 @@ Este projeto utiliza a arquitetura **Medallion (Bronze → Silver → Gold)**:
 ---
 
 ## 📁 Estrutura do Projeto
+```
 fiap_datalake_covid/
 │
 ├── notebooks/
